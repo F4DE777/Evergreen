@@ -2,7 +2,7 @@
 
 .slick-slider {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 
@@ -68,19 +68,31 @@
     position: relative;
     color: rgb(241, 237, 237);
     top: 4em;
-    width: 45%;
+    width: 5rem;
     display: inline-grid;
     z-index: 100;
     flex: 1 1;
     max-height: 32rem;
     padding-left: 60px;
+    background-color: blue;
+    margin-top: 154px;
+
 }
 
+.slick-list{
+    overflow-y:visible ;
+}
 
+.slick-track{
+background: red;
+}
 
 
 .content-coner{
     display: flex;
+    width: 50%;
+    margin: 0 auto;
+    min-height: 40rem;
 }
 
 
@@ -114,7 +126,7 @@
 
 
 .date-event{
-    margin: 6rem auto !important;
+    margin: 2rem auto !important;
     height: 15rem;
     width: 70%;
     text-align: center;
@@ -200,21 +212,6 @@
 
 
 
-    .contents-slide{
-        /* background-image: url('../assets/Rectangle10024@2x.png'); */
-        background-position: -10vw -17px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        color: rgb(241, 237, 237);
-        top: 0;
-        width: 100%;
-        display: inline-grid;
-        z-index: 100;
-        flex: 1 1;
-        max-height: 32rem;
-        padding-left: 20px;
-    }
 
     .slick-prev, .slick-next {
         font-size: 0;

@@ -96,7 +96,7 @@
     .footer{
         box-sizing: border-box;
         display: blocK;
-        background-color: #4CA149;
+        background-color: #1E4711;
         width: 100%;
         color: #ffffff;
         text-decoration: none;
@@ -429,7 +429,7 @@
                     width: 100%;
                     color: #ffffff;
                     text-decoration: none;
-                    background-color: #4CA149;
+                    background-color: #1E4711;
                     position: relative;
                    
                     display: flex;

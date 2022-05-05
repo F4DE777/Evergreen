@@ -7,22 +7,11 @@ import Pex from "../assets/Rectangle-2s@2x.png";
 import Believe from "../assets/Group1080ed@2x.png";
 import Inspire from "../assets/Group1080e@2x.png";
 import Succeed from "../assets/Group1130uyjjy@2x.png";
-import Photos2 from "../assets/Rectangle-2s@2x.png";
-import Photos3 from "../assets/Rectangle9err@2x.png";
-import Photos4 from "../assets/Rectangle-22@2x.png";
-import Photos5 from "../assets/Rectanglehlijkn@2x.png";
-import Photos6 from "../assets/Rectangle9rrf@2x.png";
-import Photos7 from "../assets/Rectangle9@2x.png";
-import Photos8 from "../assets/Rectangle9rrr@2x.png";
-import Photo1 from "../assets/Rectanglefff@2x.png";
 import Teacher from "../MaryLand/1632735791._DSC3088@2x.png";
-import { Link } from "react-router-dom";
-import Cart from "./Carousel"
-import Violin from "../assets/1632735791._DSC3088@2x.png";
-import Play from "../assets/1632735791._DSC3088ed@2x.png";
-
+import Cart from "./Carousel";
 import Vision from "./Vision";
 import "./HeroSection.css";
+import {  InstagramEmbed, TwitterEmbed} from 'react-social-media-embed';
 
 function HeroSection() {
 
@@ -48,24 +37,23 @@ function HeroSection() {
             </Carousel.Item>
           </Carousel>
         </div>
-          <div className="believe">
-              <h4>Believe.</h4>
-              <h4>Inspire.</h4>
-              <h4>Succeed.</h4>
-          </div>
-          <div className="hooked-cov ">
+         
+          {/* <div className="hooked-cov ">
             <div className="hooked">
                 <div className="search-fixed"> <Link>Search</Link> </div>
                 <div className="enquire-fixed"><Link>Enquire</Link></div>
                 <div className="apply-fixed"><Link>Apply</Link></div>
                 <div className="visit-fixed"><Link>Visit</Link></div>
             </div>
-          </div>
+          </div> */}
 
           <div className="intro-container">
             <div className="intro-cover">
+            <div className="welcome-img">
+                <img className="head-teacher-img " src={Teacher} alt="" />
+              </div>
               <div className="welcome-note">
-                <span className="tip-block"></span>
+                {/* <span className="tip-block"></span> */}
                 <label htmlFor="#">GREETINGS</label>
                 <h3>
                   Welcome to MCSS
@@ -77,16 +65,31 @@ function HeroSection() {
                     </p>
                     <p>Once again you are welcome.</p>
                 </div>
-                <div className="mt-5">
+                <div className="mt-5 more">
                   <button to={"/"} className="read">
                     Read More
                   </button>
                 </div>
               </div>
-              <div className="welcome-img">
-                <img className="head-teacher-img " src={Teacher} alt="" />
-              </div>
+              
             </div>
+          </div>
+
+          <div className='circle-container'>
+                                <div  className='center'>
+                                <h4>
+                                    Nuturing global citizens and future game-changers
+                                </h4>
+                                  
+                                  {/* <img src={Teacher} alt=""/> */}
+                                
+                                </div>
+                                <a href='/' className='deg0'><img src={Teacher} alt=""/></a>
+                                <a href='/' className='deg45'><img src={Teacher} alt=""/></a>
+                                <a href='/' className='deg135'><img src={Teacher} alt=""/></a>
+                                <a href='/' className='deg180'><img src={Teacher} alt=""/></a>
+                                <a href='/' className='deg225'><img src={Teacher} alt=""/></a>
+                                <a href='/' className='deg315'><img src={Teacher} alt=""/></a>
           </div>
 
 
@@ -97,13 +100,12 @@ function HeroSection() {
                         <div className="mission-cont">
                           <label htmlFor="#"> OUR MISSION</label>
                           <h4>At A Glance</h4>
-                          <div>
+                          <div >
                             <p>
-                              AT MCSS we are Intentional with providing an 
-                              enduring legacy of qualitative and affordable education 
-                              in Nigeria. Our students as much as possible, acquire the 
-                              best education in a conducive, fair, competitive and dynamic
-                              atmosphere with the assistance of competent and dedicated teache
+                              The quick, brown fox jumps over a lazy dog.
+                               DJs flock by when MTV ax quiz prog. Junk MTV 
+                               quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.
+                                Waltz, bad nymph,
                             </p>
                           </div>
                         </div>
@@ -112,187 +114,59 @@ function HeroSection() {
                     </div>
               </div>
           </div>
-          <div className="container">
-                          <div className="row " style={{marginTop:'7rem'}}>
-                            <div className="col-lg-4 col-md-4 col-sm-4  col-xs-4 swift" style={{ background: `url(${Believe}) center/cover no-repeat`,
-                                 height: '624px', width: '31%',maxWidth: '31%'
-                                 }}>
-                                  <h4>Believe</h4>
-                            </div>
-                            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 swift"  style={{ background: `url(${Inspire}) center/cover no-repeat`, 
-                                height: '881px', width: '31%',maxWidth: '31%'
-                                }}>
-                                  <h4>Inspire</h4>
-                            </div>
-                            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 swift" style={{ background: `url(${Succeed}) center/cover no-repeat`, 
-                                height: '724px', width: '31%',maxWidth: '31%'
-                                }}>
-                                  <h4>Succeed</h4>
-                            </div>
-                          </div>
 
-                        </div>
 
-          <div className="our-mission">
-              <div className="wit">
-                <div className="our-miss">
-                    <label htmlFor="">OUR MISSION</label>
-                    <h4>Our Group Of Schools</h4>
-                    <p>Quiere la boca exhausta vid, kiwi, piña y 
-                      fugaz jamón. Fabio me exige, sin tapujos, que añada
-                      cerveza al whisky. Jovencillo emponzoñado de whisky,
-                        ¡qué figurota exhibes! La cigüeña tocaba cada vez 
-                        mejor el saxofón y el búho pedía kiwi y queso. 
-                        El jefe buscó el éxtasis en un imprevisto baño de
-                        whisky.
-                      </p>
-                </div>
-                  
-              </div>
-              <div className="container wit2">
-                <div className="row">
-                <div className="col-6 box-out">
-                        <div style={{ background: `url(${Violin}) center/cover no-repeat`,   height: '427px', width: '-webkit-fill-available'}} className="swift">
-                            <h4>Inspire</h4>
-                        </div>
-                  </div>
-                  <div className="col-6 box-over">
-                    <div style={{ background: `url(${Play}) center/cover no-repeat`,   height: '427px', width: '-webkit-fill-available'}} className="swift">
-                        <h4>Succeed</h4>
-                    </div>
-                  </div>
-                </div>
-                  
-              </div>
-          </div>
+
           
-          <Vision/>
-          <Cart/>
-          <div className="gallery-cont">
-            <div className="btm-yellow">
-                <div className="gallery-head">
-                  <label htmlFor="">EXPLORE</label>
-                    <h1>Take A School Tour</h1>
-                    <p>Our Campus Have A Lot To Offer For Our Students</p>
-                  </div>
-                <table className='gallery'>
-                  <tr>
-                    <td className='mic-img'>
-                      <div  style={{ background: `url(${Photos7}) center/cover no-repeat`,   height: '100%', width: '-webkit-fill-available' , objectFit:'cover'  }} >
-                          <div className='text-cover'>
-                              <div className='text-content'>
-                              <i class="fas fa-caret-left"></i>
-                              <i class="fa fa-search-plus" aria-hidden="true"></i>
-                              <i class="fas fa-caret-right"></i>
-                              </div>
+          <div className="container">
+                          <div className="row " style={{marginTop:'7rem',overflow:'visible'}}>
+                            <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift" style={{ background: `url(${Believe}) center/cover no-repeat`,
+                                 height: '724px', marginTop:'8rem'
+                                 }}>
+                                  <h4>Creche</h4>
+                             </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift"  style={{ background: `url(${Inspire}) center/cover no-repeat`, 
+                                height: '724px', 
+                                }}>
+                                  <h4>Junior Primary</h4>
                             </div>
-                      </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift" style={{ background: `url(${Succeed}) center/cover no-repeat`, 
+                                height: '724px',  marginTop:'5rem'
+                                }}>
+                                  <h4>Higher Primary</h4>
+                            </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift" style={{ background: `url(${Succeed}) center/cover no-repeat`, 
+                                height: '724px',  marginTop:'12rem'
+                                }}>
+                                  <h4>Secondary</h4>
+                            </div>
+                          </div>
+
+                        </div>
+                        <Vision/>
+                       
                         
-                    </td>
-                    <td colSpan='2' style={{ width: '350px' }}>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                      <div style={{ background: `url(${Photos4}) center/cover no-repeat`,  height: '100%', width: '-webkit-fill-available' , objectFit:'cover'  }} className='img-fluid'>
-                        <div className='text-cover'>
-                            <div className='text-content'>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
-                            </div>
+
+
+
+                         
+
+                          <div>
+                                
+
+                                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                    <InstagramEmbed url="https://www.instagram.com/p/CdJgyZjD7IK/" width={550} />
+                                </div>
+                                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                  <TwitterEmbed url="https://twitter.com/LaLigaEN/status/1521928395965317123" width={550} />
+                                </div>
+
                           </div>
-                      </div>
-                    </td>
-                    <td rowSpan='2' style={{ width: '350px' }}>
-                      <div style={{
-                        background: `url(${Photos2}) center/cover no-repeat`,
-                        height: '100%', width: '-webkit-fill-available', objectFit:'cover' 
-                      }} className='img-fluid'>
-                          <div className='text-cover'>
-                            <div className='text-content'>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
-                            </div>
-                          </div>
-                      </div>
-                    </td>
-                    <td style={{ width: '350px' }}>
-                      <div style={{
-                        background: `url(${Photos3}) center/cover no-repeat`,
-                        height: '100%', width: '-webkit-fill-available', objectFit:'cover' 
-                      }} className='img-fluid'>
-                          <div className='text-cover'>
-                            <div className='text-content'>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
-                            </div>
-                          </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style={{ width: '350px' }} >
-                      <div style={{
-                        background: `url(${Photos8}) center/cover no-repeat`,
-                        height: '100%', width: '-webkit-fill-available', objectFit:'cover' 
-                      }} className='img-fluid'>
-                          <div className='text-cover'>
-                            <div className='text-content'>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
-                            </div>
-                          </div>
-                      </div>
-                    </td>
-                    <td style={{ width: '350px' }}>
-                    <div style={{
-                        background: `url(${Photo1}) center/cover no-repeat`,
-                        height: '100%', width: '-webkit-fill-available', objectFit:'cover' 
-                      }} className='img-fluid'>
-                          <div className='text-cover'>
-                            <div className='text-content'>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
-                            </div>
-                          </div>
-                      </div>
-                    </td>
-                    <td style={{ width: '350px' }}>
-                      <div style={{
-                        background: `url(${Photos5}) center/cover no-repeat`,
-                        height: '100%', width: '-webkit-fill-available', objectFit:'cover' 
-                      }} className='img-fluid'>
-                          <div className='text-cover'>
-                            <div className='text-content'>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
-                            </div>
-                          </div>
-                      </div>
-                    </td>
-                    <td style={{ width: '350px' }}>
-                      <div style={{
-                        background: `url(${Photos6}) center/cover no-repeat`,
-                        height: '100%', width: '-webkit-fill-available', objectFit:'cover' 
-                      }} className='img-fluid'>
-                          <div className='text-cover'>
-                            <div className='text-content'>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
-                            </div>
-                          </div>
-                  </div>             
-                  </td>
-                  </tr>
-                </table>
-                <div className="more-news">
-                      <button>More News + Events</button>
-                </div>
-            </div>
-          </div>
+
+                          <Cart/>          
+          
+         
+          
           
 
     </div>

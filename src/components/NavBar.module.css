@@ -25,12 +25,12 @@
 }
 
 .btnPortal{
-    background-color: #4CA14900;
-    color: #fff;
-    height: 2.5rem;
-    width: 7rem;
+    background-color: #FFFFFF;
+    color: #1E4711;
+    width: 124px;
+    height: 45px;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 30px;
     position: relative;
     outline: 0;
     border: 0;
@@ -44,14 +44,14 @@
 
 .btnPortal:hover{
     transform: scale(1.02);
-    background-color: #4CA149CF;
+    background-color: #F2F2F2;
 }
 
 .fIcon{
-    width: 30px;
-    height: 30px;
-    padding: 5px 5px;
-    /* transform: translateY(-px); */
+ 
+    width: 17px;
+    height: 21px;
+   
     transform: translate(-6px, -1px);
 }
 

@@ -72,7 +72,7 @@ function NavBar() {
 
               <li  className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 <NavLink  to={'/about'}
-                          className='nav-links'  
+                          className='nav-links bubble'  
                           onClick={closeMobileMenu}>
                         ABOUT
                 </NavLink>
@@ -80,14 +80,14 @@ function NavBar() {
               </li>
 
               <li className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-                <NavLink to={'/academics'} className='nav-links' onClick={closeMobileMenu}>
+                <NavLink to={'/academics'} className='nav-links bubble' onClick={closeMobileMenu}>
                     ADMISSION
                 </NavLink>
                 {activeMenu.menu2 && <Dropdown menuArray={navMenus.admission}/>}
               </li>
 
               <li className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <NavLink to={'/learn'} className='nav-links' onClick={closeMobileMenu}>
+              <NavLink to={'/learn'} className='nav-links bubble' onClick={closeMobileMenu}>
                       LEARNING
                 </NavLink>
                 {activeMenu.menu3 && <Dropdown menuArray={navMenus.learn}/>}

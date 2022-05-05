@@ -1,19 +1,13 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import SchLogo from '../assets/MaryLandlogo.png'
 import Twitter from "../assets/Component48–1.svg";
 import Face from "../assets/Component47–1.svg";
 import Insta from "../assets/Component49–1.svg";
 import WaterMark from "../assets/Group1066.png";
-import Alliance from "../assets/alliancef1.png";
-import Cobis from "../assets/cobis.png";
-import Acca from "../assets/Acca.png";
 import Enquire from "../assets/1632735791._DSC3088ytht@2x.png"
 import Visit from "../assets/1632735791._DSC3088sdd@2x.png"
 import Apply from "../assets/1632735791._DSC3088rf@2x.png"
-import Aisha from "../assets/aisa-logo-blk.png";
-import Apen from "../assets/Apen.png";
-import Microsoft from "../assets/Microsoft.png";
+
 
 
 
@@ -130,18 +124,18 @@ function Footer() {
                                         <header className="h5 text-white text-left lined ">Connect And Share</header>
                                         <ul className="list-unstyled d-flex text-white mr-4 mb-4">
                                             <li className="  mr-4  dxty">
-                                                <a href="#"
+                                                <a href="/"
                                                     className={'link'} target={'_blank'}>
                                                     <img src={Face} alt="social" className="img-fluid"/>
                                                 </a>
                                             </li>
                                             <li className="mr-4 dxty">
-                                                <a href="#" className={'link'} target={'_blank'}>
+                                                <a href="/" className={'link'} target={'_blank'}>
                                                     <img src={Twitter} alt="social" className="img-fluid"/>
                                                 </a>
                                             </li>
                                             <li className="mr-4 dxty">
-                                                <a href="#"
+                                                <a href="/"
                                                 className={'link'} target={'_blank'}>
                                                     <img src={Insta} alt="social" className="img-fluid"/>
                                                 </a>
@@ -155,26 +149,8 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className='affliation'>
-                        <div className='white-line'></div>
-                        {/* <div className='text-aff'><h4>AFFLIATIONS</h4></div> */}
-                        <div  className='white-line'> </div>
-                    </div>
-                    <div className='contain-sponsors'>
-                        <div>
-                            <ul className='sponsors'>
-                                <li> <img src={Alliance} alt="sponsors" srcset="" /></li>
-                                <li> <img src={Cobis} alt="sponsors" srcset="" /></li>
-                                <li> <img src={Alliance} alt="sponsors" srcset="" /></li>
-                                <li> <img src={Microsoft} alt="sponsors" srcset="" /></li>
-                                <li> <img src={Apen} alt="sponsors" srcset="" /></li>
-                                <li>  <img src={Acca} alt="" /></li>
-                                <li> <img src={Aisha} alt="sponsors" srcset="" /></li>
-                                <li> <img src={Cobis} alt="sponsors" srcset="" /></li>
-                                
-                            </ul>
-                        </div>
-                    </div>
+                   
+                   
                     <div className="divider">
                         <div className="container-lg">
                             <h4>Back to top</h4>
