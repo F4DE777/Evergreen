@@ -10,7 +10,12 @@
 
 @font-face {
     font-family: skia;
-    src: url(./assets/fonts/Skia\ Regular.ttf);
+    src: url(./assets/fonts/Philosopher-Regular.ttf);
+}
+
+@font-face {
+    font-family: skiaBold;
+    src: url(./assets/fonts/Philosopher-Bold.ttf);
 }
 
 .fade-appear,

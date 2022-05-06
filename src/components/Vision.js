@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel'
 import Item from "./Item";
-import Violin from "../assets/1632735791._DSC3088@2x.png";
-import Interhouse from "../assets/fe@2x.png";
-import Church from "../assets/1632735791._DSC3088eee@2x.png";
+import Violin from "../assets/1632735791._DSC308118@2x.png";
+import Interhouse from "../assets/1632735791._DSC308338@2x.png";
+import Church from "../assets/1632735791._DSC308228@2x.png";
 
 import "./Vision.css";
 
@@ -14,10 +14,8 @@ function Vision() {
     <div className='box-event'>
         <div className='box-event-cont'>
             <label htmlFor="">NEWS + EVENTS</label>
-            <h4>Happenings at MCSS</h4>
-            <p>Quiere la boca exhausta vid, kiwi, piña y
-                 fugaz jamón. Fabio me exige, sin tapujos, que añada
-                  cerveza al whisky.</p>
+            <h4>Featured News And Activities</h4>
+            <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky.</p>
         </div>
 
     </div>
