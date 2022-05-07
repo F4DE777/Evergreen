@@ -278,8 +278,8 @@
         height: 3rem;
         border: none;
         color: #fff;
-        border-left: 1px solid #4287BD;
-        background-color: #4287BD;
+        border-left: 1px solid #B32A31;
+        background-color: #B32A31;
     
     }
 
@@ -340,7 +340,16 @@
     }
   
 
-
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 10px;
+      }
+      
+      .grid-container div h4{
+          font-size: 20px;
+          font-weight: 900;
+      }
 
 
 

@@ -16,6 +16,8 @@ export const navMenus = {
         {title: 'How to Apply', path: '/academics/how_to_apply', cName: 'dropdown-link', description: '', },
         {title: 'School Fees', path: '/academics/school-fees', cName: 'dropdown-link'},
         {title: 'Transfer', path: '/academics/result_&_scholarships', cName: 'dropdown-link'},
+        {title: 'Transfer', path: '/academics/result_&_scholarships', cName: 'dropdown-link'},
+
    
     ],
     learn: [
@@ -27,6 +29,9 @@ export const navMenus = {
         // },
         {title: 'Senior School', path: '/learn/early-years', cName: 'dropdown-link'},
         {title: 'Junior school', path: '/learn/nursery', cName: 'dropdown-link'},
+        {title: 'Junior school', path: '/learn/nursery', cName: 'dropdown-link'},
+        {title: 'Junior school', path: '/learn/nursery', cName: 'dropdown-link'},
+
     ],
     school: [
         {title: 'Curriculum', path: '/school/curriculum', cName: 'dropdown-link'},

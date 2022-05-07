@@ -56,42 +56,68 @@ function Footer() {
             <footer className="footer ">
                 <div className="container-lg">
                     <div className="row">
-                        <div className=" col-xl-5 col-md-5 col-sm-12 col-xs-12 mb-2 mb-lg-0 Army ">
-                            <div className="container-lg useful1">
-                            <span>
-                                    <img src={SchLogo} alt="banner" />
-                            </span>
-                                <div className="carr-add">
-                                    <p className="text-white text-small ">
-                                            MCSS as an institution was established in the year 1969,
-                                             that seeks after not only academic excellence but also 
-                                             morally sound students with integrity and nobility as 
-                                             proper tools for the development of a complete personality 
-                                             in the society.                                   
-                                    </p>
-                                   
+                        <div className=" col-xl-3 col-md-3 col-sm-12 col-xs-12 mb-2 mb-lg-0 Army ">
+                            <div className="container-lg  Gap">
+                                <h6 className="use text-white">STAY UP TO DATE WITH <br></br>
+                                    THE LATEST NEWS
+                                </h6>
+                                <div className="controller-input">
+                                    <input type="text"  placeholder="Your email here"
+                                           className="form-controlling form" />
+                                    <button className="submit px-2" >
+                                        Submit
+                                    </button>
+                                    
                                 </div>
+                                <div className="socials">
+                                        <header className="h5 text-white text-left lined ">Connect And Share</header>
+                                        <ul className="list-unstyled d-flex text-white mr-4 mb-4">
+                                            <li className="  mr-4  dxty">
+                                                <a href="/"
+                                                    className={'link'} target={'_blank'}>
+                                                    <img src={Face} alt="social" className="img-fluid"/>
+                                                </a>
+                                            </li>
+                                            <li className="mr-4 dxty">
+                                                <a href="/" className={'link'} target={'_blank'}>
+                                                    <img src={Twitter} alt="social" className="img-fluid"/>
+                                                </a>
+                                            </li>
+                                            <li className="mr-4 dxty">
+                                                <a href="/"
+                                                className={'link'} target={'_blank'}>
+                                                    <img src={Insta} alt="social" className="img-fluid"/>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
 
                             </div>
-
                         </div>
 
 
-                        <div className=" col-xl-3 col-md-3 col-sm-12 col-xs-12  mt-4">
+                        <div className=" col-xl-5 col-md-5 col-sm-12 col-xs-12  mt-4">
                             <div className="container-lg usefuls">
                                 <div className="">
-                                <header className="h5 text-white lined mb-4">Get In Touch</header>
-                                    <div className='telephone'>
-                                        <h4>Telephone: </h4>
-                                        <p>(+234)0802 323 0290</p>
-                                    </div>
-                                    <div className='telephone'>
-                                        <h4>Enquiries Email: </h4>
-                                        <p>mcssmaryland@yahoo.com </p>
-                                    </div>
-                                    <div className='telephone'>
-                                        <h4>Address:  </h4>
-                                        <p>Mission Compound, Maryland, <br /> Ikeja, Lagos State, Nigeria.</p>
+                                    <div class="grid-container">
+                                        <div>
+                                            <h4>TEMPORAL SITE</h4>
+                                            <p>4 Ukwa Street, Independence Layout, Enugu</p>
+                                        </div>
+                                        <div>
+                                            <h4>DAY SCHOOL</h4>
+                                            <p>8 Aguleri Street, Opposite High Court, Enugu</p>
+                                        </div>
+                                        <div>
+                                            <h4>PHONE</h4>
+                                            <p>0808</p>
+                                        </div>  
+                                        <div>
+                                            <h4>E-MAIL</h4>
+                                            <p>evergreenschool@gmail.com</p>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 
@@ -120,28 +146,7 @@ function Footer() {
                                 </div>
                                
                                 <div>
-                                    <div className="socials">
-                                        <header className="h5 text-white text-left lined ">Connect And Share</header>
-                                        <ul className="list-unstyled d-flex text-white mr-4 mb-4">
-                                            <li className="  mr-4  dxty">
-                                                <a href="/"
-                                                    className={'link'} target={'_blank'}>
-                                                    <img src={Face} alt="social" className="img-fluid"/>
-                                                </a>
-                                            </li>
-                                            <li className="mr-4 dxty">
-                                                <a href="/" className={'link'} target={'_blank'}>
-                                                    <img src={Twitter} alt="social" className="img-fluid"/>
-                                                </a>
-                                            </li>
-                                            <li className="mr-4 dxty">
-                                                <a href="/"
-                                                className={'link'} target={'_blank'}>
-                                                    <img src={Insta} alt="social" className="img-fluid"/>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    
                                 </div>
                                
                                 
@@ -160,7 +165,7 @@ function Footer() {
                         <div className="copyrights">
                             <div className=" ">
                                 <p className=" mb-0 text-white fullyear">
-                                    &copy; {new Date().getFullYear()} {''} Maryland Comprehensive Secondary School{' '}
+                                    &copy; {new Date().getFullYear()} {''} Evergreen Schools - All rights reserved{' '}
                                 </p>
                             </div>
                             <div className="policy">
