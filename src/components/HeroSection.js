@@ -16,7 +16,9 @@ import "./HeroSection.css";
 import {  InstagramEmbed, TwitterEmbed} from 'react-social-media-embed';
 import styled from 'styled-components';
 import Scroll from "./scrollToTop";
-import {Fade,LightSpeed } from 'react-reveal';
+import {Fade,LightSpeed,Rotate,Zoom,Bounce } from 'react-reveal';
+import Jump from 'react-reveal/Jump'
+import ScrollReveal from 'scrollreveal'
 
 
 const Socialmedia = styled.div`
@@ -63,6 +65,7 @@ const Section =styled.section``
 
 function HeroSection() {
 
+  ScrollReveal().reveal('.circle-container');
 
   return (
     <Section  >
@@ -86,15 +89,18 @@ function HeroSection() {
                 </Carousel.Item>
               </Carousel>
             </Fade>
-            
-              <div className="hooked-cov ">
-                <div className="hooked">
-                    <div className="search-fixed"> <Link>Search</Link> </div>
-                    <div className="enquire-fixed"><Link>Enquire</Link></div>
-                    <div className="apply-fixed"><Link>Apply</Link></div>
-                    <div className="visit-fixed"><Link>Visit</Link></div>
+            <Rotate bottom right>
+                <div className="hooked-cov ">
+                  <div className="hooked">
+                      <div className="search-fixed"> <Link>Search</Link> </div>
+                      <div className="enquire-fixed"><Link>Enquire</Link></div>
+                      <div className="apply-fixed"><Link>Apply</Link></div>
+                      <div className="visit-fixed"><Link>Visit</Link></div>
+                  </div>
                 </div>
-              </div>
+            </Rotate>
+            
+              
 
               <div className="intro-container" >
                 <div className="intro-cover">
@@ -109,17 +115,24 @@ function HeroSection() {
                   <LightSpeed right>
                       <div className="welcome-note">
                       {/* <span className="tip-block"></span> */}
-                      <label htmlFor="#">GREETINGS</label>
-                      <h3>
-                        Welcome to Evergreen Schools
-                      </h3>
-                      <div  className="mt-3">
-                          <p>I welcome you all to this noble institution, Maryland Comprehensive Secondary School and I congratulate your beloved parents/guardian on your admission to this school.</p>
-                          <p>
-                              I must say that it is a great privilege to be in this great school that has and will continue to provide highly esteemed and holistic, qualitative education to many people holding key posts in various works of life in and outside our country. You have come therefore to be part of MCSS family and to show the stuff you are made of, in contributing to the good and golden legacy that the school has made in world history.
-                          </p>
-                          <p>Once again you are welcome.</p>
-                      </div>
+                      <Zoom bottom>
+                        <label htmlFor="#">GREETINGS</label>
+                      </Zoom>
+                      <Zoom right>
+                          <h3>
+                            Welcome to Evergreen Schools
+                          </h3>
+                      </Zoom>
+                      <Bounce right cascade>
+                          <div  className="mt-3">
+                              <p>I welcome you all to this noble institution, Maryland Comprehensive Secondary School and I congratulate your beloved parents/guardian on your admission to this school.</p>
+                              <p>
+                                  I must say that it is a great privilege to be in this great school that has and will continue to provide highly esteemed and holistic, qualitative education to many people holding key posts in various works of life in and outside our country. You have come therefore to be part of MCSS family and to show the stuff you are made of, in contributing to the good and golden legacy that the school has made in world history.
+                              </p>
+                              <p>Once again you are welcome.</p>
+                          </div>
+                      </Bounce>
+                      
                       <div className="mt-5 more">
                         <button to={"/"} className="read">
                           Read More
@@ -152,54 +165,69 @@ function HeroSection() {
                           <div className="col-12 yellow-border">
                             <div>
                               <div className="mission-cont">
-                                <label htmlFor="#"> GET TO KNOW US</label>
-                                <h4>Explore Evergreen School</h4>
-                                <div >
-                                  <p>
-                                    The quick, brown fox jumps over a lazy dog.
-                                    DJs flock by when MTV ax quiz prog. Junk MTV 
-                                    quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.
-                                      Waltz, bad nymph,
-                                  </p>
-                                </div>
+                                <LightSpeed top>
+                                    <label htmlFor="#"> GET TO KNOW US</label>
+                                </LightSpeed>
+                                <LightSpeed left>
+                                      <h4>Explore Evergreen School</h4>
+                                </LightSpeed>
+                                
+                                    <div >
+                                      <p>
+                                        <Bounce bottom cascade>
+                                            The quick, brown fox jumps over a lazy dog.
+                                            DJs flock by when MTV ax quiz prog. Junk MTV 
+                                            quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.
+                                              Waltz, bad nymph,
+                                          </Bounce>
+                                      </p>
+                                    </div>
+                               
+                                
                               </div>
                     
                             </div>
                           </div>
+                         
                     </div>
                   </div>
                   <div className="container" id="greet" >
-                                  <div className="row " style={{marginTop:'7rem',overflow:'visible'}}>
-                                    <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift" style={{ background: `url(${Believe}) center/cover no-repeat`,
-                                        height: '724px', marginTop:'8rem'
-                                        }}>
-                                          <h4>Creche</h4>
-                                          <div className="overlay-img"></div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift"  style={{ background: `url(${Inspire}) center/cover no-repeat`, 
-                                        height: '724px', 
-                                        }}>
-                                          <h4>Junior Primary</h4>
-                                          <div className="overlay-img1"></div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift" style={{ background: `url(${Succeed}) center/cover no-repeat`, 
-                                        height: '724px',  marginTop:'5rem'
-                                        }}>
-                                          <h4>Higher Primary</h4>
-                                          <div className="overlay-img2"></div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift" style={{ background: `url(${Senior}) center/cover no-repeat`, 
-                                        height: '724px',  marginTop:'12rem'
-                                        }}>
-                                          <h4>Secondary</h4>
-                                          <div className="overlay-img3"></div>
-                                    </div>
-                                  </div>
+                        <Bounce  bottom cascade>
+                              <div className="row " style={{marginTop:'7rem',overflow:'visible'}}>
+                                        <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift" style={{ background: `url(${Believe}) center/cover no-repeat`,
+                                            height: '724px', marginTop:'8rem'
+                                            }}>
+                                              <h4>Creche</h4>
+                                              <div className="overlay-img"></div>
+                                        </div>
+                                        <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift"  style={{ background: `url(${Inspire}) center/cover no-repeat`, 
+                                            height: '724px', 
+                                            }}>
+                                              <h4>Junior Primary</h4>
+                                              <div className="overlay-img1"></div>
+                                        </div>
+                                        <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift" style={{ background: `url(${Succeed}) center/cover no-repeat`, 
+                                            height: '724px',  marginTop:'5rem'
+                                            }}>
+                                              <h4>Higher Primary</h4>
+                                              <div className="overlay-img2"></div>
+                                        </div>
+                                        <div className="col-lg-3 col-md-3 col-sm-3  col-xs-3 swift" style={{ background: `url(${Senior}) center/cover no-repeat`, 
+                                            height: '724px',  marginTop:'12rem'
+                                            }}>
+                                              <h4>Secondary</h4>
+                                              <div className="overlay-img3"></div>
+                                        </div>
+                              </div>
+                        </Bounce>
+                                  
 
                   </div>
               </div>
               
-              <Vision/>
+              <Jump top>
+                      <Vision/>
+              </Jump>
                           
                             
 
