@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@coreui/coreui/dist/css/coreui.min.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -12,11 +13,13 @@ import Learn from './components/pages/Learning';
 import School from './components/pages/School';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
-function App() {
+export default function App() {
+
+  
   return (
     <>
-    <Router>                                                                                  
-          <NavBar />
+    <Router>  
+            <NavBar />                                                                 
           <Route render={({location}) => (  
                 <TransitionGroup>
                   <CSSTransition 
@@ -44,5 +47,3 @@ function App() {
     </>
   );
 }
-
-export default App;

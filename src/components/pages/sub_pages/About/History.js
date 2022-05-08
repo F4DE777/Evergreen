@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Pex from "../../../../assets/smile@2x.png";
 import Rev from "../../../../assets/front@2x.png";
-import Build from "../../../../assets/building@2x.png";
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
 import './Style.css';

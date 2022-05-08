@@ -100,6 +100,9 @@ function Footer() {
                         <div className=" col-xl-5 col-md-5 col-sm-12 col-xs-12  mt-4">
                             <div className="container-lg usefuls">
                                 <div className="">
+                                    <div>
+                                        <img src={SchLogo} alt=" badge" />
+                                    </div>
                                     <div class="grid-container">
                                         <div>
                                             <h4>TEMPORAL SITE</h4>
@@ -137,7 +140,7 @@ function Footer() {
                                     </div>
                                     <div className="col-6">
                                         <div className='w-mark'>
-                                            <a href={'http://educare.school/'} target={'_blank'} style={{display: 'inline-block'}}>
+                                            <a href={'http://educare.school/'}  style={{display: 'inline-block'}}>
                                                 <img src={WaterMark} alt="Aisa" className="img-fluid">
                                                 </img>
                                             </a>

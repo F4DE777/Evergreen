@@ -10,7 +10,7 @@ function Map() {
            style={{ border: "0" , width:'100%'}}
             allowfullscreen=""
              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              referrerpolicy="no-referrer-when-downgrade"/>
 
     </div>
   )

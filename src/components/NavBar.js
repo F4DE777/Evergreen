@@ -4,6 +4,7 @@ import SchLogo from '../assets/MaryLandlogo@2x.png'
 import fIcon from '../assets/Icon feather-user.svg';
 import {navMenus} from './MenuItems';
 import Dropdown from './Dropdown';
+import Fade from 'react-reveal/Fade';
 
 import classes from './NavBar.module.css';
 import './NavBar.css'
@@ -58,7 +59,7 @@ function NavBar() {
   const closeMobileMenu = () => setClick(false)
 
   return (
-   <nav className='navContainer'>
+   <Fade top className='navContainer'>
         <div  className={classes.navCont}>
           <div className={classes.imgCont}>
             <Link to={'/'}>
@@ -110,15 +111,13 @@ function NavBar() {
                 </NavLink>
               </li>
 
-              <li>
-                <button className={classes.btnPortal} >
-                  <img src={fIcon} alt="person"  className={classes.fIcon} />
+                  <button className={classes.btnPortal} >
+                    <img src={fIcon} alt="person"  className={classes.fIcon} />
                   Portal</button>
-              </li>
 
             </ul>
-      </div>
-   </nav>
+        </div>
+   </Fade>
   )
 }
 

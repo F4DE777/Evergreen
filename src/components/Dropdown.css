@@ -3,7 +3,7 @@
     width: 805px !important;
     /* height: 252px; */
     position: absolute;
-    top: 50px !important;
+    top: 70px !important;
     list-style: none;
     text-align: start;
     justify-content: space-between;
@@ -21,7 +21,7 @@
 	height: 0;
 	bottom: 100%;
 	left: auto;
-    top: 38px;
+    top: 58px;
     margin-left: 20px;
 	border: .75rem solid transparent;
 	border-top: none;
