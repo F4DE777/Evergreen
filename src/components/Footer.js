@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import SchLogo from '../assets/MaryLandlogo.png'
 import Twitter from "../assets/Component48–1.svg";
 import Face from "../assets/Component47–1.svg";
@@ -8,7 +8,8 @@ import Enquire from "../assets/1632735791._DSC3088ytht@2x.png"
 import Visit from "../assets/1632735791._DSC3088sdd@2x.png"
 import Apply from "../assets/1632735791._DSC3088rf@2x.png"
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 import "./Footer.css";
@@ -16,6 +17,12 @@ import "./Footer.css";
 
 
 function Footer() {
+    useEffect(() => {
+        Aos.init({  offset: 200,
+          duration: 600,
+          easing: 'ease-in-sine',
+          delay: 120,});
+    }, []);
   return (
     <>
     <div className="container  smooth">
@@ -23,8 +30,8 @@ function Footer() {
                           <label htmlFor="">EXPLORE</label>
                             <h1>Discover More</h1>
                         </div>
-                        <div className="row mb-5 mt-5">
-                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12  ">
+                        <div className="row mb-5 mt-5" >
+                            <div data-aos="zoom-in-left" className="col-md-4 col-lg-4 col-sm-12 col-xs-12  ">
                                 <div className='join-img'>
                                     <img src={Enquire} alt="stairs " className="img-fluid"/>
                                 </div>
@@ -32,7 +39,7 @@ function Footer() {
                                     <h4>Enquire</h4>
                                   </div>  
                             </div>
-                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
+                            <div  data-aos="zoom-in" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
                                 <div className='join-img1'>
                                     <img src={Visit} alt="stairs" className="img-fluid"/>
                                 </div>
@@ -40,7 +47,7 @@ function Footer() {
                                     <h4>Visit</h4>
                                   </div>  
                             </div>
-                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
+                            <div data-aos="zoom-in-right" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
                                 <div className='join-img2'>
                                     <img src={Apply} alt="stairs" className="img-fluid"/>
                                 </div>
@@ -58,10 +65,13 @@ function Footer() {
                     <div className="row">
                         <div className=" col-xl-3 col-md-3 col-sm-12 col-xs-12 mb-2 mb-lg-0 Army ">
                             <div className="container-lg  Gap">
-                                <h6 className="use text-white">STAY UP TO DATE WITH <br></br>
-                                    THE LATEST NEWS
+                                <div data-aos="fade-right">
+                                    <h6  className="use text-white">STAY UP TO DATE WITH <br></br>
+                                        THE LATEST NEWS
                                 </h6>
-                                <div className="controller-input">
+                                </div>
+                                
+                                <div data-aos="fade-left"  className="controller-input">
                                     <input type="text"  placeholder="Your email here"
                                            className="form-controlling form" />
                                     <button className="submit px-2" >
@@ -69,7 +79,7 @@ function Footer() {
                                     </button>
                                     
                                 </div>
-                                <div className="socials">
+                                <div data-aos="zoom-out-up" className="socials">
                                         <header className="h5 text-white text-left lined ">Connect And Share</header>
                                         <ul className="list-unstyled d-flex text-white mr-4 mb-4">
                                             <li className="  mr-4  dxty">
@@ -100,23 +110,23 @@ function Footer() {
                         <div className=" col-xl-5 col-md-5 col-sm-12 col-xs-12  mt-4">
                             <div className="container-lg usefuls">
                                 <div >
-                                    <div className="badge-cont">
+                                    <div data-aos="zoom-in"  className="badge-cont">
                                         <img src={SchLogo} alt="badge"  className='schbadge'/>
                                     </div>
                                     <div class="grid-container">
-                                        <div>
+                                        <div data-aos="zoom-in">
                                             <h4>TEMPORAL SITE</h4>
                                             <p>4 Ukwa Street, Independence Layout, Enugu</p>
                                         </div>
-                                        <div>
+                                        <div data-aos="zoom-out">
                                             <h4>DAY SCHOOL</h4>
                                             <p>8 Aguleri Street, Opposite High Court, Enugu</p>
                                         </div>
-                                        <div>
+                                        <div data-aos="zoom-in">
                                             <h4>PHONE</h4>
                                             <p>0808</p>
                                         </div>  
-                                        <div>
+                                        <div data-aos="zoom-out">
                                             <h4>E-MAIL</h4>
                                             <p>evergreenschool@gmail.com</p>
                                         </div>
@@ -126,12 +136,12 @@ function Footer() {
                                 
                             </div>
                         </div>
-                        <div className=" col-xl-4 col-md-4 col-sm-12 col-xs-12  mt-3 Army ">
+                            <div className=" col-xl-4 col-md-4 col-sm-12 col-xs-12  mt-3 Army ">
                             <div className="container-lg  Gap">
                                 <div className="row">
                                     <div className="col-12">
                                         <h6 className="use text-white">Useful Links </h6>
-                                            <div style={{display:'flex', gap:'3rem'}}>
+                                            <div data-aos="zoom-in-left" style={{display:'flex', gap:'3rem'}}>
                                                  <ul className='grade-level'>
                                                     <li><Link>Home </Link> </li>
                                                     <li><Link>Apply </Link></li> 
@@ -148,7 +158,7 @@ function Footer() {
                                            
                                     </div>
                                     <div className="col-12">
-                                        <div className='w-mark'>
+                                        <div data-aos="flip-left" className='w-mark'>
                                             <a href={'http://educare.school/'}  style={{display: 'inline-block'}}>
                                                 <img src={WaterMark} alt="Aisa" className="img-fluid">
                                                 </img>

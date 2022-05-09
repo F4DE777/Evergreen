@@ -826,10 +826,38 @@
 
 .circle-container img {
     display: block;
+    border-radius: 123px;
+    object-fit: contain;
+}
+
+.circle1{
     width: 16rem;
     height: 16rem;
-    border-radius: 123px;
-    object-fit: cover;
+}
+
+.circle2{
+    width: 16rem;
+    height: 16rem;
+}
+
+.circle3{
+    width: 16rem;
+    height: 16rem;
+}
+
+.circle4{
+    width: 16rem;
+    height: 16rem;
+}
+
+.circle5{
+    width: 16rem;
+    height: 16rem;
+}
+
+.circle6{
+    width: 527px;
+    height: 527px;
 }
 
 .deg0 { transform: translate(28vw); } /* 12em = half the width of the wrapper */
