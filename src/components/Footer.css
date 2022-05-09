@@ -8,7 +8,7 @@
         position: relative;
         justify-content: space-between;
         height: 12rem;
-                margin-top: 4rem;
+        margin-top: 2rem;
     
     }
     
@@ -26,22 +26,21 @@
     }
     
     
-    /* .form {
-        width: 50%;
-        height: 3, 5em;
-        color: rgba(165, 155, 155, 0.26);
-    } */
+  
     
     
     .usefuls{
-            margin-top: 3rem;
+            margin-top: 0;
             justify-content: center;
+            border-right: 1px solid #ffffff5e;
+            border-left: 1px solid #ffffff5e;
+
     }
     .useful1{
             margin-top: 2rem;
-        justify-content: center;
-        display: block;
-        text-align: left;
+            justify-content: center;
+            display: block;
+            text-align: left;
     }
     
     
@@ -143,6 +142,13 @@
     .grade-level li{
         font-size: 18px;
         font-weight: 100;
+    }
+    
+    .grade-level li a{
+        font-size: 18px;
+        font-weight: 100;
+        color: #fff;
+        text-decoration: none;
     }
     
     
@@ -344,6 +350,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-gap: 10px;
+        margin-top: 3rem;
+
       }
       
       .grid-container div h4{
@@ -426,6 +434,15 @@
 .text-aff h4{
     font-size: 16px;
     margin-bottom: -5px;
+}
+
+
+.badge-cont{
+    text-align: center;
+}
+
+.schbadge{
+    min-height: 50px;
 }
 
     

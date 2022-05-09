@@ -7,7 +7,7 @@ import WaterMark from "../assets/Group1066.png";
 import Enquire from "../assets/1632735791._DSC3088ytht@2x.png"
 import Visit from "../assets/1632735791._DSC3088sdd@2x.png"
 import Apply from "../assets/1632735791._DSC3088rf@2x.png"
-
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 
@@ -99,9 +99,9 @@ function Footer() {
 
                         <div className=" col-xl-5 col-md-5 col-sm-12 col-xs-12  mt-4">
                             <div className="container-lg usefuls">
-                                <div className="">
-                                    <div>
-                                        <img src={SchLogo} alt=" badge" />
+                                <div >
+                                    <div className="badge-cont">
+                                        <img src={SchLogo} alt="badge"  className='schbadge'/>
                                     </div>
                                     <div class="grid-container">
                                         <div>
@@ -129,16 +129,25 @@ function Footer() {
                         <div className=" col-xl-4 col-md-4 col-sm-12 col-xs-12  mt-3 Army ">
                             <div className="container-lg  Gap">
                                 <div className="row">
-                                    <div className="col-6">
-                                        <h6 className="use text-white">Useful Links     </h6>
-                                            <ul className='grade-level'>
-                                                <li>Junior School</li>
-                                                <li>Senior School</li>
-                                                <li>Enquire</li>
-                                                <li>Apply</li>
-                                            </ul>
+                                    <div className="col-12">
+                                        <h6 className="use text-white">Useful Links </h6>
+                                            <div style={{display:'flex', gap:'3rem'}}>
+                                                 <ul className='grade-level'>
+                                                    <li><Link>Home </Link> </li>
+                                                    <li><Link>Apply </Link></li> 
+                                                    <li><Link>Admission List</Link></li> 
+                                                    <li><Link>Scholarships</Link></li> 
+                                                    <li><Link>Alumni</Link></li> 
+                                                </ul>
+                                                <ul className='grade-level'>
+                                                    <li><Link>About Us </Link></li> 
+                                                    <li><Link>Payment</Link></li> 
+                                                    <li><Link>Career</Link></li> 
+                                                </ul>
+                                            </div>
+                                           
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-12">
                                         <div className='w-mark'>
                                             <a href={'http://educare.school/'}  style={{display: 'inline-block'}}>
                                                 <img src={WaterMark} alt="Aisa" className="img-fluid">
@@ -160,9 +169,9 @@ function Footer() {
                    
                    
                     <div className="divider">
-                        <div className="container-lg">
+                        {/* <div className="container-lg">
                             <h4>Back to top</h4>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="container-lg">
                         <div className="copyrights">

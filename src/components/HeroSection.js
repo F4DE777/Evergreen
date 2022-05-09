@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Carousel from "react-bootstrap/Carousel";
 import scholar from "../assets/Rectangle-2@2x.png";
 import Des from "../assets/Rectangle2io@2x.png";
@@ -18,8 +18,8 @@ import styled from 'styled-components';
 import Scroll from "./scrollToTop";
 import {Fade,LightSpeed,Rotate,Zoom,Bounce } from 'react-reveal';
 import Jump from 'react-reveal/Jump'
-import ScrollReveal from 'scrollreveal'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Socialmedia = styled.div`
       position:relative;
@@ -63,15 +63,21 @@ const SocialmediaContent = styled.div`
 
 const Section =styled.section``
 
-function HeroSection() {
+const HeroSection = () => {
 
-  ScrollReveal().reveal('.circle-container');
+     useEffect(() => {
+        Aos.init({  offset: 200,
+          duration: 600,
+          easing: 'ease-in-sine',
+          delay: 100,});
+    }, []);
+
 
   return (
     <Section  >
-      <Scroll/>
+      
         <div className="page-trans" >
-            <Fade  bottom>
+            <div    data-aos="fade-left" >
               <Carousel fade >
                 <Carousel.Item>
                   <img className="imgCaro d-block w-100 img-fluid " src={scholar} alt="Scholar" />
@@ -88,7 +94,7 @@ function HeroSection() {
                   <img className="imgCaro d-block w-100 img-fluid " src={Pex} alt="" />
                 </Carousel.Item>
               </Carousel>
-            </Fade>
+            </div>
             <Rotate bottom right>
                 <div className="hooked-cov ">
                   <div className="hooked">
@@ -104,17 +110,12 @@ function HeroSection() {
 
               <div className="intro-container" >
                 <div className="intro-cover">
-
-                <LightSpeed left>
-                      <div className="welcome-img">
-                        <img className="head-teacher-img " src={Teacher} alt="" />
-                      </div>
-                </LightSpeed>
-                  
-
-                  <LightSpeed right>
-                      <div className="welcome-note">
-                      {/* <span className="tip-block"></span> */}
+                  <div data-aos="fade-right" >
+                        <div className="welcome-img">
+                          <img className="head-teacher-img " src={Teacher} alt="" />
+                        </div>
+                  </div>
+                  <div data-aos="fade-left" data-aos-easing="ease-in-sine" className="welcome-note">
                       <Zoom bottom>
                         <label htmlFor="#">GREETINGS</label>
                       </Zoom>
@@ -132,20 +133,16 @@ function HeroSection() {
                               <p>Once again you are welcome.</p>
                           </div>
                       </Bounce>
-                      
                       <div className="mt-5 more">
                         <button to={"/"} className="read">
                           Read More
                         </button>
                       </div>
-                      </div>
-                  </LightSpeed>
-                  
-                  
+                  </div>
                 </div>
               </div>
 
-              <div className='circle-container'>
+              <div data-aos="flip-left"  className='circle-container'>
                   <div  className='center'>
                   <h4>
                       Nuturing global citizens and future game-changers
@@ -262,6 +259,7 @@ function HeroSection() {
 
         </div>
 
+        <Scroll/>
     </Section>
   );
 }
