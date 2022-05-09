@@ -156,7 +156,7 @@ const HeroSection = () => {
               </div>
 
               <div data-aos="flip-left"  className='circle-container'>
-                  <div  className='center'>
+                  <div  className='center-cov'>
                   <h4>
                       Nuturing global citizens and future game-changers
                   </h4>

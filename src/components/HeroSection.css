@@ -787,7 +787,49 @@
 
 
 
+.center-cov{
+    /* border: 4px dotted #000; */
+    height: 40rem;
+    display: block;
+    position: absolute;
+    top: 17%;
+    left: 22%;
+    text-align: center;
+    justify-content: center;
+    width: 43rem;
+    display: flex;
+    flex-direction: column;
+   
+}
 
+.center-cov h4{
+    font-family: skiaBold;
+    font-size: clamp( 2.5rem, 1.5vw, 2.2rem);
+    color: #191919;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.center-cov::after{
+    /* content: "";
+    position: absolute;
+    border: 3px dashed #00000080;
+    border-radius: 500px;
+    top: -8px;
+    bottom: -8px;
+    left: -8px;
+    right: -8px; */
+
+    content: '';
+    position: absolute;
+    left: -17px;
+    top: -17px;
+    right: -17px;
+    bottom: -17px;
+    border: 3px dashed #00000080;
+    border-radius: 500px;
+    box-sizing: border-box;
+}
 
 .marg{
     margin-top: 17rem;
@@ -799,8 +841,6 @@
     width: 70%;
     height: 60rem;
     padding: 2.8em;
-    border: dashed 1px;
-    border-radius: 50%;
     margin: 1.75em auto 0;
 }
 .circle-container a {
@@ -813,15 +853,7 @@
     margin: -2em;
 }
 
-.circle-container > div {
-    display: block;
-    position: absolute;
-    top: 47%;
-    /* left: 52%; */
-    text-align: center;
-    width: 100%;
-    height: 8em;
-}
+
 
 
 .circle-container img {
@@ -841,13 +873,13 @@
 }
 
 .circle3{
-    width: 16rem;
-    height: 16rem;
+    width: 427px;
+    height: 427px;
 }
 
 .circle4{
-    width: 16rem;
-    height: 16rem;
+    width: 327px;
+    height: 327px;
 }
 
 .circle5{
@@ -856,16 +888,16 @@
 }
 
 .circle6{
-    width: 527px;
-    height: 527px;
+    width: 427px;
+    height: 427px;
 }
 
-.deg0 { transform: translate(28vw); } /* 12em = half the width of the wrapper */
-.deg45 { transform: rotate(45deg) translate(24vw) rotate(-45deg); }
-.deg135 { transform: rotate(135deg) translate(29vw) rotate(-135deg); }
-.deg180 { transform: translate(-40em); }
-.deg225 { transform: rotate(225deg) translate(40em) rotate(-225deg); }
-.deg315 { transform: rotate(310deg) translate(29vw) rotate(-315deg); }
+.deg0 { transform: translate(19vw); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(45deg) translate(18vw) rotate(-2deg) }
+.deg135 { transform: rotate(155deg) translate(24vw) rotate(-142deg); }
+.deg180 { transform: rotate(11deg) translate(-40em)  rotate(-6deg); }
+.deg225 { transform: rotate(225deg) translate(35em) rotate(-225deg); }
+.deg315 { transform: rotate(286deg) translate(29vw) rotate(-287deg); }
 
 
 @media screen and (max-width: 960px) {
