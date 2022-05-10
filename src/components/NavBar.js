@@ -33,9 +33,10 @@ function NavBar() {
       setActiveMenu({
         menu1: menuText === 'about',
         menu2: menuText === 'admission',
-        menu3: menuText === 'learning',
+        menu3: menuText === 'academics',
         menu4: menuText === 'school life',
-        menu5: menuText === 'news',
+        menu5: menuText === 'gallery',
+        menu6: menuText === 'news',
       })
     }
 
@@ -51,6 +52,7 @@ function NavBar() {
         menu3: false,
         menu4: false,
         menu5: false,
+        menu6: false,
       })
     }
   };
@@ -81,17 +83,17 @@ function NavBar() {
               </li>
 
               <li className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-                <NavLink to={'/academics'} className='nav-links bubble' onClick={closeMobileMenu}>
+                <NavLink to={'/admission'} className='nav-links bubble' onClick={closeMobileMenu}>
                     ADMISSION
                 </NavLink>
                 {activeMenu.menu2 && <Dropdown menuArray={navMenus.admission}/>}
               </li>
 
               <li className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <NavLink to={'/learn'} className='nav-links bubble' onClick={closeMobileMenu}>
-                      LEARNING
+              <NavLink to={'/academics'} className='nav-links bubble' onClick={closeMobileMenu}>
+                    ACADEMICS
                 </NavLink>
-                {activeMenu.menu3 && <Dropdown menuArray={navMenus.learn}/>}
+                {activeMenu.menu3 && <Dropdown menuArray={navMenus.academics}/>}
              </li>
 
               <li  className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
@@ -100,13 +102,13 @@ function NavBar() {
                 </NavLink>
               </li>
               <li className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}  >
-                <NavLink to={'/news'} className='nav-links' onClick={closeMobileMenu}>
+                <NavLink to={'/gallery'} className='nav-links' onClick={closeMobileMenu}>
                   GALLERY
                 </NavLink>
               </li>
 
               <li className='nav-item '> 
-                <NavLink to={'/gallery'} className='nav-links' onClick={closeMobileMenu}>
+                <NavLink to={'/news'} className='nav-links' onClick={closeMobileMenu}>
                       NEWS AND EVENTS
                 </NavLink>
               </li>

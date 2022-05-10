@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route,Redirect } from 'react-router-dom';
-import Apply from    './sub_pages/Academics/Apply'
-import AgeCons from    './sub_pages/Academics/AgeCons'
-import Result from    './sub_pages/Academics/Result'
+import Creche from    './sub_pages/Academics/Creche'
 import NotFound from './NotFound';
+import JuniorSchool from './sub_pages/Academics/JuniorSchool';
+import Primary from './sub_pages/Academics/Primary';
+import SecSchool from './sub_pages/Academics/SecSchool';
+
 
 
 
@@ -14,12 +16,12 @@ function Academics() {
         <Router>
               <Switch>
                         <Route path={'/academics'} exact >
-                          <Redirect to={'/academics/how_to_apply'}/>
+                          <Redirect to={'/academics/creche'}/>
                         </Route>
-                        <Route path="/academics/how_to_apply" component={Apply}   exact/>
-                        <Route path="/academics/school-fees" component={AgeCons}   exact/>
-                        <Route path="/academics/result_&_scholarships" component={Result}   exact/>
-
+                        <Route path="/academics/creche" component={Creche}   exact/>
+                        <Route path="/academics/junior-primary" component={JuniorSchool}   exact/>
+                        <Route path="/academics/higher-primary" component={Primary}   exact/>
+                        <Route path="/academics/secondary" component={SecSchool}   exact/>
                       <Route path="*" component={NotFound}  />
                 </Switch>
           </Router>

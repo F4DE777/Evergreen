@@ -1,5 +1,5 @@
 import React from 'react';
-import Pex from "../../../../assets/building@2x.png";
+import Pex from "../../../../assets/Group10121@2x.png";
 import Rev from "../../../../assets/Rev@2x.png";
 import { CBreadcrumbItem } from '@coreui/react';
 import { CBreadcrumb } from '@coreui/react';

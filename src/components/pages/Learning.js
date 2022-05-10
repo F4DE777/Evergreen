@@ -1,17 +1,17 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route,Redirect } from 'react-router-dom';
-import Eyfs from './sub_pages/Learning/Eyfs'
-import JuniorSchool from './sub_pages/Learning/JuniorSchool'
-import Nursery from './sub_pages/Learning/Nursery'
-import Primary from './sub_pages/Learning/Primary'
-import SecSchool from './sub_pages/Learning/SecSchool'
-import NotFound from './NotFound';
+// import { BrowserRouter as Router, Switch, Route,Redirect } from 'react-router-dom';
+// import Eyfs from './sub_pages/Learning/Eyfs'
+// import JuniorSchool from './sub_pages/Academics/JuniorSchool'
+// import Nursery from './sub_pages/Learning/Nursery'
+// import Primary from './sub_pages/Learning/Primary'
+// import SecSchool from './sub_pages/Learning/SecSchool'
+// import NotFound from './NotFound';
 
 
 function Learn() {
   return (
     <>
-          <Router>
+          {/* <Router>
               <Switch>
                         <Route path={'/learn'} exact >
                           <Redirect to={'/learn/early-years'}/>
@@ -23,7 +23,7 @@ function Learn() {
                         <Route path="/learn/secondary_school" component={SecSchool}   exact/>
                       <Route path="*" component={NotFound}  />
                 </Switch>
-          </Router>
+          </Router> */}
     
     </>
   )

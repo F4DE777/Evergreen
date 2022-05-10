@@ -9,9 +9,11 @@ import Footer from './components/Footer';
 import NotFound from './components/pages/NotFound';
 import About from './components/pages/About';
 import Academics from './components/pages/Academics';
-import Learn from './components/pages/Learning';
+// import Learn from './components/pages/Learning';
 import School from './components/pages/School';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import Admission from './components/pages/Admission';
+
 
 export default function App() {
 
@@ -30,8 +32,8 @@ export default function App() {
                       <Switch>
                               <Route path="/" component={HeroSection}   exact/>
                               <Route path={'/about'} component={About} />
+                              <Route path={'/admission'} component={Admission}  />
                               <Route path={'/academics'} component={Academics}  />
-                              <Route path={'/learn'} component={Learn}  />
                               <Route path={'/school'} component={School} />
                               <Route path="*"  component={NotFound}  />
                         </Switch>

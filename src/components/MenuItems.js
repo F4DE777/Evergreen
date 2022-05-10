@@ -1,10 +1,12 @@
 export const navMenus = {
     about: [
         // {title: 'About ' + process.env.REACT_APP_SITE_NAME, path: '/about', cName: 'dropdown-link'},
-        {title: 'Administrator’s Message', path: '/about/administrators-message', cName: 'dropdown-link'},
-        {title: 'Proprietor’s Message', path: '/about/proprietors-message', cName: 'dropdown-link'},
+        {title: 'Welcome Address', path: '/about/welcome-address', cName: 'dropdown-link'},
+        {title: 'Parents’ Code-of-Conduct', path: '/about/parents-code-of-conduct', cName: 'dropdown-link'},
         {title: 'History of the School', path: '/about/history', cName: 'dropdown-link'},
         {title: 'Contact Us', path: '/about/contact-us', cName: 'dropdown-link'},
+        {title: 'About Evergreen', path: '/about/about-evergreen', cName: 'dropdown-link'},
+
     ],
     admission: [
         // {
@@ -13,24 +15,24 @@ export const navMenus = {
         //     path: '/academic',
         //     cName: 'dropdown-link',
         // },
-        {title: 'How to Apply', path: '/academics/how_to_apply', cName: 'dropdown-link', description: '', },
-        {title: 'School Fees', path: '/academics/school-fees', cName: 'dropdown-link'},
-        {title: 'Transfer', path: '/academics/result_&_scholarships', cName: 'dropdown-link'},
-        {title: 'Transfer', path: '/academics/result_&_scholarships', cName: 'dropdown-link'},
+        {title: 'How to Apply', path: '/admission/how_to_apply', cName: 'dropdown-link', description: '', },
+        {title: 'Apply Online', path: '/admission/apply-online', cName: 'dropdown-link'},
+        {title: 'International Application', path: '/admission/international-application', cName: 'dropdown-link'},
+        {title: 'Tuitions & Fees', path: '/admission/tuition_&_fees', cName: 'dropdown-link'},
 
    
     ],
-    learn: [
+    academics: [
         // {
         //     title: 'Welcome',
         //     description: `We are delighted that you are interested in applying to ${process.env.REACT_APP_SITE_NAME}`,
         //     path: '/learn',
         //     cName: 'dropdown-link'
         // },
-        {title: 'Senior School', path: '/learn/early-years', cName: 'dropdown-link'},
-        {title: 'Junior school', path: '/learn/nursery', cName: 'dropdown-link'},
-        {title: 'Junior school', path: '/learn/nursery', cName: 'dropdown-link'},
-        {title: 'Junior school', path: '/learn/nursery', cName: 'dropdown-link'},
+        {title: 'Creche', path: '/academics/creche', cName: 'dropdown-link'},
+        {title: 'Higher Primary', path: '/academics/higher-primary', cName: 'dropdown-link'},
+        {title: 'Junior Primary', path: '/academics/junior-primary', cName: 'dropdown-link'},
+        {title: 'Secondary', path: '/academics/secondary', cName: 'dropdown-link'},
 
     ],
     school: [
